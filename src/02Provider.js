@@ -4,7 +4,7 @@ const url = "http://localhost:7545"
 const provider = new ethers.providers.JsonRpcProvider(url);
 
 const main = async () => {
-    const balance = await provider.getBalance(`0xAE3544Bd7EBdFC24CC3b9DeFea3f480024191102`);
+    const balance = await provider.getBalance(`0xD1f832eDE8404A152963911586d2dB2d6a90A6D5`);
     console.log(`ETH Balance of main: ${ethers.utils.formatEther(balance)} ETH`);
 
     const network = await provider.getNetwork();
